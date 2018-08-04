@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+       淡灰色矩形方框 
+        原角10度
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="rectangle">
+    <stroke 
+        android:width="1dp" 
+        android:color="#33000000">
+    </stroke>
+    <corners android:radius="10dp"/>
+</shape>

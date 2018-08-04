@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- com.lyf.spinner.DemoSpinnner2 -->
+<!-- 这里控制的是下拉弹出后的布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/txtvwSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCCE8CF"
+        android:textColor="#88000000"
+        android:textStyle="normal|italic" 
+        android:padding="10dp"/>
+</LinearLayout>

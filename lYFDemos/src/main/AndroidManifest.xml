@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lyf.lyfdemos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.lyf.android.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- 默认启动 -->
+        <activity android:name="com.lyf.android.ApiDemos" >
+            <intent-filter>
+                <!-- 决定应用程序最先启动的Activity -->
+                <action android:name="android.intent.action.MAIN" /> 
+                <!-- 设为默认 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 决定应用程序是否显示在launcher桌面程序列表里  必须-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- *********************************************************************************************** -->
+        <!-- 启动图标2 相当于快捷方式  这样会出现两个launcher启动图标 -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- ====================================================================================== -->
+        <!-- 主架构 demo-->
+        <activity
+            android:name="com.lyf.mainframework.activitygroup.MyActivityGroup"
+            android:label="mainframework[主结构]/activitygroup" >
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lyf.mainframework.activitygroup.MyActivityGroup2"
+            android:label="mainframework[主结构]/activitygroup2" >
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.lyf.mainframework.activitygroup.OneFragmentActivity"></activity>
+        <activity android:name="com.lyf.mainframework.activitygroup.TwoFragmentActivity"></activity>
+        <activity android:name="com.lyf.mainframework.activitygroup.ThreeFragmentActivity"></activity>
+        
+        <!-- *********************************************************************************************** -->
+        <!-- TabActivity方式的tab -->
+        <activity
+            android:name="com.lyf.tabhost.MyTabActivity"
+            android:label="tabhost[选项卡]/MyTabActivity" >
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <!-- 说明 -->
+        <activity
+            android:name="com.lyf.tabhost.MyTabContentFactory"
+            android:label="tabhost[选项卡]/MyTabContentFactory" >
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <!-- 说明 -->
+        <activity
+            android:name="com.lyf.tabhost.TabHost2"
+            android:label="tabhost[选项卡]/TabHost2" >
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <!-- 说明 -->
+        <activity
+            android:name="com.lyf.tabhost.qiantao.ParentTab"
+            android:label="tabhost[选项卡]/ParentTab" >
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lyf.tabhost.qiantao.SubTab"></activity>
+        <activity android:name="com.lyf.tabhost.qiantao.NormalActivity"></activity>
+        
+        <!-- *********************************************************** -->
+        <!-- 丑的 下拉 -->
+        <activity
+            android:name="com.lyf.spinner.DemoSpinnner0"
+            android:label="spinner[下拉列表]/丑的DemoSpinnner0" 
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lyf.spinner.DemoSpinnner1"
+            android:label="spinner[下拉列表]/漂亮的DemoSpinnner1" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <!-- demo 下拉写法集合 -->
+        <activity
+            android:name="com.lyf.spinner.DemoSpinnner2"
+            android:label="spinner[下拉列表]/DemoSpinnner2下拉写法集合" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.lyf.simpleTabIndicator.IndicatorDemo"
+            android:label="TabIndicator[指示器]/simpleTabIndicator" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.lyf.webview.js.JavaCallJs"
+            android:label="js[webview与js交互]/JavaCallJs" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lyf.webview.js.JsCallJava"
+            android:label="js[webview与js交互]/JsCallJava" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        
+        <!-- 第三方开发插件 imageloader-->
+        <activity
+            android:name="com.lyf.threeframework.imageloader.ImageloaderDemo"
+            android:label="threeframework[第三方开发插件]/ImageloaderDemo" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <!-- 第三方开发插件 xutils-->
+        <activity
+            android:name="com.lyf.threeframework.xutils.XutilsDemoNet"
+            android:label="threeframework[第三方开发插件]/XutilsDemoNet" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.lyf.shipei.ShiPeiLayout"
+            android:label="shipei[适配]/ShiPeiLayout" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        
+        <!-- 缓存框架 ASimpleCache-->
+        <activity
+            android:name="com.lyf.threeframework.cache.asimplecache.ASimpleCacheMainActivity" 
+            android:label="Cache[缓存框架]/ASimpleCache" >
+            <intent-filter>
+                <!-- 最先启动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 类别代码 -->
+                <category android:name="android.intent.category.SAMPLE_CODE" /> 
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lyf.threeframework.cache.asimplecache.SaveBitmapActivity" />
+        <activity android:name="com.lyf.threeframework.cache.asimplecache.SaveJsonObjectActivity" />
+        <activity android:name="com.lyf.threeframework.cache.asimplecache.SaveObjectActivity" />
+        <activity android:name="com.lyf.threeframework.cache.asimplecache.SaveStringActivity" />
+        <activity android:name="com.lyf.threeframework.cache.asimplecache.SaveMediaActivity" />
+        <activity android:name="com.lyf.threeframework.cache.asimplecache.SaveDrawableActivity"></activity>
+        <activity android:name="com.lyf.threeframework.cache.asimplecache.SaveJsonArrayActivity" ></activity>
+        <!-- 缓存框架 -->
+        
+    </application>
+</manifest>

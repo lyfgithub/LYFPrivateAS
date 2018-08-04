@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 效果 
+        默认状态：
+                       深黄色填充
+                       圆角边框 10度
+        
+        按下状态：
+                       浅黄色填充
+                       圆角边框 10度
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 默认 -->
+    <item android:state_pressed="false">
+        <shape 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:shape="rectangle" > 
+		    <solid android:color="#FFF0AC00"></solid>
+		    <stroke android:color="#FFF0AC00" android:width="1dp" ></stroke>
+		    <corners android:radius="5dp" />
+	    </shape>
+    </item>
+    
+    <!-- 按下时 -->
+    <item 
+        android:state_pressed="true">
+        <shape 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:shape="rectangle" > 
+	        <solid android:color="#aaF0AC00"></solid>
+		    <stroke android:color="#aaF0AC00" android:width="1dp" ></stroke>
+		    <corners android:radius="5dp"></corners>
+	    </shape>
+    </item>
+    
+   
+
+</selector>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<!-- 防止乱码  -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">  
+<title>jsandroid</title>  
+  
+<script type="text/javascript" language="javascript"> 
+    //java调用无参数的js
+    function javaCallJs1(){  
+        document.getElementById("helloweb").innerHTML +="<br/> javaCallJs1 success！"; 
+        alert('javaCallJs1');  
+    }  
+    //java调用有参数的js
+    function javaCallJs2(name){  
+        document.getElementById("helloweb").innerHTML +="<br/> <br/> javaCallJs1 success！"+name;  
+    }  
+</script>  
+</head>  
+  
+  
+<body>  
+    webview <br/>
+    
+    <div id="helloweb">显示结果  java call js  </div>  
+</body>  
+</html>  

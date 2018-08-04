@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- 防止乱码  -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">  
+<title>jsandroid</title>  
+  
+<script type="text/javascript" language="javascript"> 
+    function fun() {
+        //调用java代码  
+        window.android.jsCallAndroid1();  
+    }  
+    
+    function fun2(name) {
+         alert(name);    //在java中不执行
+        //调用java代码  
+        window.android.jsCallAndroid2(name);  
+    } 
+
+</script>  
+</head>  
+  
+<body>  
+    webview <br/>
+    
+    <p> <input type="button" value="jscalljava1" onclick="fun();" />  </p>
+    
+    <p> <a onClick="window.android.jsCallAndroid1()">jscalljava1</a> </p> 
+    
+    <p> <input type="button" value="jscalljava2" onclick="fun2('lyf');" />  </p> 
+</body>  
+</html>  

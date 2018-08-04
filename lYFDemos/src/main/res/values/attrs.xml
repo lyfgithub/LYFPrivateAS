@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+    <declare-styleable name="前缀名">
+        <attr name="属性名" format="属性值的类型"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable> 
+    -->
+    
+    <declare-styleable name="indicator">
+        <attr name="color" format="color"/>
+    </declare-styleable>
+    
+    
+    
+    
+</resources>

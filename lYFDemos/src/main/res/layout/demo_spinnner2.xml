@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+	        android:id="@+id/myTextViewA"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5sp"
+	        android:text="A方法: " />
+	    <Spinner
+	        android:id="@+id/mySpinnerA"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:background="#FFCCE8CF"
+	        android:popupBackground="#FFD3E1EE" 
+	        android:entries="@array/spinner_data"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5sp"
+	        android:text="A.1方法: " />
+	    <Spinner
+	        android:id="@+id/mySpinnerA1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:background="@drawable/bg_box"
+	        android:popupBackground="#FFD3E1EE" 
+	        android:entries="@array/spinner_data"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5sp"
+	        android:text="B方法: " />
+	    <Spinner
+	        android:id="@+id/mySpinnerB"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:background="@null"/>
+    </LinearLayout>
+    
+    
+
+
+</LinearLayout>

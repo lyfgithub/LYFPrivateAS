@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主架构界面 -->
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF">
+
+    <!-- 底部选项卡 区域-->
+    <LinearLayout 
+        android:id="@+id/ll_main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+        
+        <!-- tab1区 -->
+        <LinearLayout 
+            android:id="@+id/ll_tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView 
+                android:id="@+id/iv_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:clickable="true"
+                android:src="@drawable/ic_launcher"/>
+            <TextView 
+                android:id="@+id/tv_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tab1"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <!-- tab2区-->
+         <LinearLayout 
+             android:id="@+id/ll_tab2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:orientation="vertical"
+             android:layout_weight="1">
+             <ImageView 
+                 android:id="@+id/iv_tab2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:scaleType="matrix"
+                 android:clickable="true"
+                 android:src="@drawable/ic_launcher"/>
+             <TextView 
+                 android:id="@+id/tv_tab2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="tab2"
+                 android:textSize="12sp"/>
+          </LinearLayout>
+         
+        <!-- tab3区 -->
+		<LinearLayout
+		    android:id="@+id/ll_tab3" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:orientation="vertical"
+		    android:layout_weight="1">
+		    <ImageView 
+		        android:id="@+id/iv_tab3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:scaleType="matrix"
+		        android:clickable="true"
+		        android:src="@drawable/ic_launcher"/>
+		    <TextView 
+		        android:id="@+id/tv_tab3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="tab3"
+		        android:textSize="12sp"/>
+		</LinearLayout>
+     </LinearLayout>
+
+    <!-- 上面的ViewPager -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/ll_main_bottom"
+        android:orientation="vertical"
+        android:background="#55000000">
+        <android.support.v4.view.ViewPager
+	        android:id="@+id/vp_main"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    
+</RelativeLayout>
